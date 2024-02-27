@@ -1,11 +1,18 @@
 #include "graphvisualiserwidget.h"
 
 #include <QApplication>
+#include <QTime>
+#include <QMainWindow>
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-    QApplication a(argc, argv);
-    GraphVisualiserWidget w;
-    w.show();
-    return a.exec();
+    QApplication app(argc, argv);
+
+    GraphVisualiserWidget *widget = new GraphVisualiserWidget;
+
+    QMainWindow mainWindow;
+    mainWindow.setCentralWidget(widget);
+
+    mainWindow.show();
+    return app.exec();
 }

@@ -2,22 +2,29 @@
 #define GRAPHVISUALISERWIDGET_H
 
 #include <QMainWindow>
+#include <QGraphicsView>
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class GraphVisualiserWidget;
-}
-QT_END_NAMESPACE
+class Node;
 
-class GraphVisualiserWidget : public QMainWindow
+class GraphVisualiserWidget : public QGraphicsView
 {
     Q_OBJECT
 
 public:
     GraphVisualiserWidget(QWidget *parent = nullptr);
-    ~GraphVisualiserWidget();
+
+
+public slots:
+    void shuffle();
+    void buttonClicked();
+
+
 
 private:
-    Ui::GraphVisualiserWidget *ui;
+    int timerId = 0;
+    Node *centerNode;
+    // Ui::GraphVisualiserWidget *ui;
 };
 #endif // GRAPHVISUALISERWIDGET_H
+
+

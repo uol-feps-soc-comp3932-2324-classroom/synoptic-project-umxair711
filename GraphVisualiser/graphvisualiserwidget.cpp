@@ -1,14 +1,37 @@
 #include "graphvisualiserwidget.h"
-#include "ui_graphvisualiserwidget.h"
+#include "edge.h"
+#include "node.h"
+
+// #include <math.h>
+
+#include <QKeyEvent>
+#include <QRandomGenerator>
+#include <QPushButton>
 
 GraphVisualiserWidget::GraphVisualiserWidget(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::GraphVisualiserWidget)
+    : QGraphicsView(parent)
 {
-    ui->setupUi(this);
+    QGraphicsScene *scene = new QGraphicsScene(this);
+
+
+
+    QPushButton *button = new QPushButton(this);
+    scene->addItem(qobject_cast<QGraphicsItem *>(button));
+    button->setGeometry(50, 50, 70, 30);
+    button->setText("Shuffle");
+    connect(button, &QPushButton::clicked, this, &GraphVisualiserWidget::buttonClicked);
+
+}
+//! [1]
+
+void GraphVisualiserWidget::buttonClicked()
+{
+    shuffle();
 }
 
-GraphVisualiserWidget::~GraphVisualiserWidget()
+
+void GraphVisualiserWidget::shuffle()
 {
-    delete ui;
+
 }
+
