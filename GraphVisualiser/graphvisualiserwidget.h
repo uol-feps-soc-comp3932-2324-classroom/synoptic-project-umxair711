@@ -15,8 +15,8 @@ public:
 
 
 public slots:
-    void shuffle();
-    void buttonClicked();
+    void randomise();
+    // void buttonClicked();
 
 
 

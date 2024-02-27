@@ -15,34 +15,32 @@ GraphVisualiserWidget::GraphVisualiserWidget(QWidget *parent)
 
     setScene(scene);
     setMinimumSize(500, 400);
-
-    for (int i = 0; i <= QRandomGenerator::global()->bounded(8, 15); i++){
-        qreal x = QRandomGenerator::global()->bounded(300);
-        qreal y = QRandomGenerator::global()->bounded(300);
-        Node *node = new Node(this);
-        node->setPos(x, y);
-        scene->addItem(node);
-    }
-
-
+    randomise();
 
     QPushButton *button = new QPushButton(this);
     scene->addItem(qobject_cast<QGraphicsItem *>(button));
     // button->setGeometry(50, 50, 70, 30);
     button->setText("Random");
-    connect(button, &QPushButton::clicked, this, &GraphVisualiserWidget::buttonClicked);
+    connect(button, &QPushButton::clicked, this, &GraphVisualiserWidget::randomise);
 
 }
-//! [1]
 
-void GraphVisualiserWidget::buttonClicked()
+
+// void GraphVisualiserWidget::buttonClicked()
+// {
+//     randomise();
+// }
+
+
+void GraphVisualiserWidget::randomise()
 {
-    shuffle();
-}
-
-
-void GraphVisualiserWidget::shuffle()
-{
-
+    scene()->clear();
+    for (int i = 0; i <= QRandomGenerator::global()->bounded(15); i++){
+        qreal x = QRandomGenerator::global()->bounded(300);
+        qreal y = QRandomGenerator::global()->bounded(300);
+        Node *node = new Node(this);
+        node->setPos(x, y);
+        scene()->addItem(node);
+    }
 }
 
