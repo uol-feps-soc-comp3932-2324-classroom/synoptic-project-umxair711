@@ -12,18 +12,17 @@ class GraphVisualiserWidget : public QGraphicsView
 
 public:
     GraphVisualiserWidget(QWidget *parent = nullptr);
+    QVector <Node *> nodes();
 
 
 public slots:
     void randomise();
-    // void buttonClicked();
 
 
 
 private:
     int timerId = 0;
-    Node *centerNode;
-    // Ui::GraphVisualiserWidget *ui;
+    QVector <Node *> nodesList;
 };
 #endif // GRAPHVISUALISERWIDGET_H
 

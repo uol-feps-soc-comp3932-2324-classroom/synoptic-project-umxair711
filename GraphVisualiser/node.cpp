@@ -16,7 +16,7 @@ Node::Node(GraphVisualiserWidget *graphVisualiserWidget)
 void Node::addEdge(Edge *edge)
 {
     edgeList << edge;
-    // edge->adjust();
+    edge->findPoints();
 }
 
 QVector<Edge *> Node::edges() const
@@ -38,7 +38,7 @@ QRectF Node::boundingRect() const
     return QRectF( -10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust);
 }
 
-void Node::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *)
+void Node::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
 {
     painter->setPen(Qt::NoPen);
     painter->setBrush(Qt::gray);

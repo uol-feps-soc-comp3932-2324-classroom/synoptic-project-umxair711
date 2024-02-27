@@ -12,18 +12,20 @@ public:
     Node *sourceNode() const;
     Node *destNode() const;
 
-    enum { Type = UserType + 2 };
-    int type() const override { return Type; }
+    void findPoints();
+
+    // enum { Type = UserType + 2 };
+    // int type() const override { return Type; }
 
 protected:
-    // QRectF boundingRect() const override;
+    QRectF boundingRect() const override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 
 private:
     Node *source, *dest;
 
     QPointF sourcePoint;
     QPointF destPoint;
-    // qreal arrowSize = 10;
 };
 
 #endif // EDGE_H
