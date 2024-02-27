@@ -25,12 +25,17 @@ QVector<Edge *> Node::edges() const
 }
 
 
-//! [9]
 QPainterPath Node::shape() const
 {
     QPainterPath path;
     path.addEllipse(-10, -10, 20, 20);
     return path;
+}
+
+QRectF Node::boundingRect() const
+{
+    qreal adjust = 2;
+    return QRectF( -10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust);
 }
 
 void Node::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *)

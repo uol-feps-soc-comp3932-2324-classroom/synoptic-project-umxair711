@@ -28,3 +28,10 @@ private:
 #endif // GRAPHVISUALISERWIDGET_H
 
 
+
+
+
+
+
+
+

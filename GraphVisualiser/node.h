@@ -12,11 +12,13 @@ class Node : public QGraphicsItem
 public:
     Node(GraphVisualiserWidget *graphVisualiserWidget);
 
+    QRectF boundingRect() const override;
+    QPainterPath shape() const override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+
     void addEdge(Edge *edge);
     QVector<Edge *> edges() const;
 
-    QPainterPath shape() const override;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
 
 private:
     QVector<Edge *> edgeList;
