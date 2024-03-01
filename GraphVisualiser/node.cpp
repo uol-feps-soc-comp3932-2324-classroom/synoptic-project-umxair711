@@ -41,10 +41,10 @@ QRectF Node::boundingRect() const
 void Node::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
 {
     painter->setPen(Qt::NoPen);
-    painter->setBrush(Qt::gray);
+    painter->setBrush(Qt::red);
     painter->drawEllipse(-10, -10, 20, 20);
 
-    painter->setPen(QPen(Qt::black, 0));
+    painter->setPen(QPen(Qt::red, 0));
     painter->drawEllipse(-10, -10, 20, 20);
 }
 
