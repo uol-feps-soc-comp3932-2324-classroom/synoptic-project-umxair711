@@ -7,7 +7,7 @@ class Node;
 
 class Edge : public QGraphicsItem {
 public:
-    Edge(Node *sourceNode, Node *destNode);
+    Edge(Node *sourceNode, Node *destNode, bool dir);
 
     Node *sourceNode() const;
     Node *destNode() const;
@@ -19,13 +19,15 @@ public:
 
 protected:
     QRectF boundingRect() const override;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *) override;
 
 private:
     Node *source, *dest;
 
     QPointF sourcePoint;
     QPointF destPoint;
+    bool directed;
+
 };
 
 #endif // EDGE_H

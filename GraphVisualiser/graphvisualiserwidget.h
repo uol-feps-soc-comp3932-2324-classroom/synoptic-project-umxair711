@@ -5,6 +5,7 @@
 #include <QGraphicsView>
 #include <QSpinBox>
 #include <QLabel>
+#include <QCheckBox>
 
 class Node;
 
@@ -30,6 +31,8 @@ private:
     QSpinBox *minNodesSelecter = new QSpinBox(this);
     QLabel *numOfNodesLabel = new QLabel(this);
     QLabel *numOfEdgesLabel = new QLabel(this);
+    QCheckBox *directedCheckBox = new QCheckBox(this);
+
 };
 #endif // GRAPHVISUALISERWIDGET_H
 

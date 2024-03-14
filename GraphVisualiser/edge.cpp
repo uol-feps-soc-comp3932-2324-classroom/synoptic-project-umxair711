@@ -5,8 +5,8 @@
 #include <QtMath>
 
 
-Edge::Edge(Node *sourceNode, Node *destNode)
-    : source(sourceNode), dest(destNode)
+Edge::Edge(Node *sourceNode, Node *destNode, bool dir)
+    : source(sourceNode), dest(destNode), directed(dir)
 {
     source->addEdge(this);
     dest->addEdge(this);
@@ -50,5 +50,17 @@ void Edge::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
     QLineF line(sourcePoint, destPoint);
     painter->setPen(QPen(Qt::darkGreen, 2, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin));
     painter->drawLine(line);
+
+    if (directed){
+        double angle = std::atan2(-line.dy(), line.dx());
+
+        QPointF sourceArrowP1 = sourcePoint + QPointF(sin(angle + M_PI / 3) * 10,
+                                                      cos(angle + M_PI / 3) * 10);
+        QPointF sourceArrowP2 = sourcePoint + QPointF(sin(angle + M_PI - M_PI / 3) * 10,
+                                                      cos(angle + M_PI - M_PI / 3) * 10);
+
+        painter->setBrush(Qt::black);
+        painter->drawPolygon(QPolygonF() << line.p1() << sourceArrowP1 << sourceArrowP2);
+    }
 }
 

@@ -7,6 +7,7 @@
 #include <QPushButton>
 #include <QSpinBox>
 #include <QMessageBox>
+#include <QCheckBox>
 
 GraphVisualiserWidget::GraphVisualiserWidget(QWidget *parent)
     : QGraphicsView(parent)
@@ -21,6 +22,10 @@ GraphVisualiserWidget::GraphVisualiserWidget(QWidget *parent)
     // button->setGeometry(50, 50, 70, 30);
     button->setText("Random");
     connect(button, &QPushButton::clicked, this, &GraphVisualiserWidget::randomise);
+
+
+    directedCheckBox->setText("Directed");
+    directedCheckBox->setGeometry(79, 30, 80, 20);
 
     minNodesSelecter->setGeometry(80, 5, 50, 20);
     minNodesSelecter->setRange(5, 15);
@@ -55,38 +60,10 @@ void GraphVisualiserWidget::randomise()
             node->setPos(x, y);
             nodesList.append(node);
             scene()->addItem(node);
-
-            if (i > 0){
-                // int node1;
-                // int node2;
-                // bool edgeExists = true;
-                // while (edgeExists){
-                //     edgeExists = false;
-                //     do {
-                //         node1 = QRandomGenerator::global()->bounded(0, nodesList.count());
-                //         node2 = QRandomGenerator::global()->bounded(0, nodesList.count());
-                //     } while (node1 == node2);
-
-                //     if (nodesList[node1]->edges().isEmpty() || nodesList[node2]->edges().isEmpty()){
-                //         break;
-                //     }
-
-                //     for (Edge *edge1 : nodesList[node1]->edges()){
-                //         for (Edge *edge2 : nodesList[node2]->edges()){
-                //             if (edge1 == edge2){
-                //                 edgeExists = true;
-                //             }
-                //         }
-                //     }
-                // }
-
-                // scene()->addItem(new Edge(nodesList[node1],
-                //                           nodesList[node2]));
-            }
         }
 
-        int numOfEdges = QRandomGenerator::global()->bounded((nodesList.count() * (nodesList.count() - 1)) / 2);
-        for (int i = 0; i < numOfEdges; i++){
+        int maxNumOfEdges = QRandomGenerator::global()->bounded((nodesList.count() * (nodesList.count() - 1)) / 2);
+        for (int i = 0; i < maxNumOfEdges; i++){
             int node1;
             int node2;
             bool edgeExists = true;
@@ -109,12 +86,11 @@ void GraphVisualiserWidget::randomise()
                     }
                 }
             }
-
-            scene()->addItem(new Edge(nodesList[node1],
-                                      nodesList[node2]));
+            bool directed = directedCheckBox->isChecked();
+            scene()->addItem(new Edge(nodesList[node1], nodesList[node2], directed));
         }
         numOfNodesLabel->setText("Number of nodes: " + QString::number(nodesList.count()));
-        numOfEdgesLabel->setText("Number of edges: " + QString::number(numOfEdges));
+        numOfEdgesLabel->setText("Number of edges: " + QString::number(maxNumOfEdges));
     }
     else if (min >= max){
         QMessageBox *rangeError = new QMessageBox(this);
