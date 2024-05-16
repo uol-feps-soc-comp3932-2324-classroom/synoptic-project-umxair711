@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 12.0.2, 2024-03-14T02:15:49. -->
+<!-- Written by QtCreator 12.0.2, 2024-05-16T06:25:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -8,7 +8,7 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
-  <value type="qlonglong">1</value>
+  <value type="qlonglong">0</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.EditorSettings</variable>
@@ -97,8 +97,8 @@
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -136,8 +136,8 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -177,8 +177,8 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Profile</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -241,13 +241,13 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/umairpathan/QtProjects/synoptic-project-umxair711/GraphVisualiser/GraphVisualiser.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/umairpathan/QtProjects/synoptic-project-umxair711/GraphVisualiser/GraphVisualiser.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/umairpathan/QtProjects/DijkstraVisualiserTests/DijkstraVisualiserTests.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/umairpathan/QtProjects/DijkstraVisualiserTests/DijkstraVisualiserTests.pro</value>
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_64bit-Debug/GraphVisualiser.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_arm_darwin_generic_mach_o_64bit-Debug/DijkstraVisualiserTest.app/Contents/MacOS</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
@@ -256,16 +256,16 @@
   <variable>ProjectExplorer.Project.Target.1</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop (arm-darwin-generic-mach_o-32bit)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop (arm-darwin-generic-mach_o-32bit)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{c0d1d7c1-383d-42f6-9c09-29cafcd5fb97}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop (x86-darwin-generic-mach_o-64bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop (x86-darwin-generic-mach_o-64bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{12baee8a-d914-4c23-811c-48dbc7845523}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -303,8 +303,8 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -344,8 +344,8 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Profile</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -408,13 +408,13 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/umairpathan/QtProjects/synoptic-project-umxair711/GraphVisualiser/GraphVisualiser.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/umairpathan/QtProjects/synoptic-project-umxair711/GraphVisualiser/GraphVisualiser.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/umairpathan/QtProjects/DijkstraVisualiserTests/DijkstraVisualiserTests.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/umairpathan/QtProjects/DijkstraVisualiserTests/DijkstraVisualiserTests.pro</value>
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/umairpathan/QtProjects/synoptic-project-umxair711/build-GraphVisualiser-Desktop_arm_darwin_generic_mach_o_32bit-Debug/GraphVisualiser.app/Contents/MacOS</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/umairpathan/QtProjects/build-DijkstraVisualiserTests-Desktop_x86_darwin_generic_mach_o_64bit-Debug/DijkstraVisualiserTest.app/Contents/MacOS</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

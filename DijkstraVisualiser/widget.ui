@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1130</width>
+    <height>705</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1130</width>
+    <height>705</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dijkstra Learning Tool</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">D8CFAF</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>50</y>
+     <width>771</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="interactive">
+    <bool>false</bool>
+   </property>
+   <property name="dragMode">
+    <enum>QGraphicsView::NoDrag</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>415</y>
+     <width>300</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>11</y>
+     <width>111</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <item>
+    <property name="text">
+     <string>Basic</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Advanced</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>16</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Graph Type:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>300</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;Run Dijkstra's Algorithm On This Graph!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>81</y>
+     <width>300</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use Dijkstra's algorithm to find the shortest path between the start and end nodes in this graph.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>614</y>
+     <width>301</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="submitButton">
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nextGraphButton">
+      <property name="text">
+       <string>Next Graph</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
+    <rect>
+     <x>1075</x>
+     <y>10</y>
+     <width>21</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scoreText">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>377</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>Score:</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>300</width>
+     <height>240</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Didot</family>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+    </font>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="scoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>380</y>
+     <width>46</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:700; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0/0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="resultLabel">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>377</y>
+     <width>210</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="helpText">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1131</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;title&gt;Help - Dijkstra Learning Tool&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h1 style=&quot; margin-top:20px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:xx-large; font-weight:700; color:#333333;&quot;&gt;? Dijkstra Learning Tool&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:xx-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h1&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700; color:#555555;&quot;&gt;Goal&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:16px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif';&quot;&gt;Your goal is to find the shortest path between the start node and the end node (shown in green) in the displayed graph. Use Dijkstra's algorithm to calculate the shortest path and select the correct answer from the multiple-choice options provided. Press &amp;quot;Submit&amp;quot; to check your answer - If the path is green you got it right! If its red, try again.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700; color:#555555;&quot;&gt;Functionality&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif';&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:40px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Directed Checkbox:&lt;/span&gt; Toggle this checkbox to switch between directed and undirected graphs. A directed graph has edges with specific directions, while an undirected graph has edges that can be traversed in both directions. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif';&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:40px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Difficulty Level:&lt;/span&gt; Select the difficulty level of the graph. The &amp;quot;Basic&amp;quot; level generates simpler graphs, while the &amp;quot;Advanced&amp;quot; level generates more complex graphs with more nodes and edges. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif';&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:40px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Scroll and Drag &lt;/span&gt;to zoom in and out, or traverse the graph.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif';&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:40px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Score &lt;/span&gt;shows how many questions you got right out of all the ones you've attempted.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700; color:#555555;&quot;&gt;Dijkstra's Algorithm Reminder&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:x-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot; margin-top:20px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#f9f9f9;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:large; font-weight:700; background-color:#f9f9f9;&quot;&gt;Steps to Perform Dijkstra's Algorithm:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h3&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;Initialize the distance to the start node to 0 and all other nodes to infinity. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;Set the start node as the current node. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;For the current node, consider all its unvisited neighbors and calculate their tentative distances. If the calculated distance of a node is less than the known distance, update the shortest distance. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;Once all neighbors of the current node have been visited, mark the current node as visited. A visited node will not be checked again. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;Select the unvisited node with the smallest tentative distance and set it as the new current node. Repeat steps 3-5 until all nodes are visited or the smallest tentative distance among the unvisited nodes is infinity. &lt;/li&gt;
+&lt;li style=&quot; font-family:'Arial','sans-serif'; background-color:#f9f9f9;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;Backtrack from the end node to the start node to determine the shortest path. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="directedCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>13</y>
+     <width>85</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>Directed</string>
+   </property>
+   <property name="tristate">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <zorder>directedCheckBox</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>scoreText</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>scoreLabel</zorder>
+  <zorder>resultLabel</zorder>
+  <zorder>helpText</zorder>
+  <zorder>helpButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
